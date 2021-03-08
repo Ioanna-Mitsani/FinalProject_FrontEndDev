@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/NIKOS_Logo-1-300x298.png" type="image/png">
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://kit.fontawesome.com/8c629bec5a.js" crossorigin="anonymous"></script>
+    <script src="scripts/burger-menu.js" defer></script>
+    <script src="scripts/form-validation.js" defer></script>
+    <title>Επικοινωνία | Ο Νίκος 1977</title>
+</head>
+<body>
+    <!-- HEADER SECTION -->
+<header>
+     <!--Topbar with info-->
+     <div id="topbar" class="flex">
+        <span id="address">
+            <p><i class="fas fa-map-marker-alt topbar-icon"></i> Κωνσταντίνου Παλαιολόγου 36, Νέα Σμύρνη</p>
+        </span>
+        <span id="sm-phone" class="hidden-mobile">
+             <p id="tel"><i class="fas fa-phone-alt topbar-icon"></i> 210 9356865</p>  
+        </span>
+    </div>
+    <!-- Navigation bar -->
+    <div id="menu" class="flex">
+         <div id="openMenu"><i class="fas fa-bars menu-icon"></i></div>
+         <a href="index.html"><img id="logo" src="images/nikos-logo-270x270.png" alt="Nikos Logo"/></a>
+         <div id="phone"><a href="tel:+302109356865"><i class="fas fa-phone menu-icon"></i></a></div>
+         <ul id="links" class="hidden-mobile">
+             <li><a href="index.html" class="menu-item">Αρχική</a></li>
+             <li><a href="about.html" class="menu-item">Η Ιστορία μας</a></li>
+             <li><a href="products.html" class="menu-item">Τα Προϊόντα μας</a></li>
+             <li><a href="contact-us.html" class="menu-item active">Επικοινωνία</a></li>
+             </ul>
+     </div> 
+     <div id="nav-mobile">
+         <div id="closeMenu"><i class="fas fa-times menu-icon"></i></div>
+         <ul>
+             <li><a href="index.html" class="menu-item-mobile">Αρχική</a></li>
+             <li><a href="about.html" class="menu-item-mobile">Η Ιστορία μας</a></li>
+             <li><a href="products.html" class="menu-item-mobile">Τα Προϊόντα μας</a></li>
+             <li><a href="contact-us.html" class="menu-item-mobile">Επικοινωνία</a></li>
+         </ul>
+     </div>        
+ </header>
+ <!-- Google Maps -->
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.411344944374!2d23.70813875111467!3d37.94418027962958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bc4c25a00fbd%3A0x9e140334b3e80d89!2zzprPic69L869zr_PhSDOoM6xzrvOsc65zr_Ou8-MzrPOv8-FIDM2LCDOnc6tzrEgzqPOvM-Nz4HOvc63IDE3MSAyMg!5e0!3m2!1sel!2sgr!4v1615173318190!5m2!1sel!2sgr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<!-- Contact page main content -->
+<main class="grid-to-flex">
+<div id="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i><u>Διεύθυνση:</u></p>
+             <p>Κωνσταντίνου Παλαιολόγου 36, Νέα Σμύρνη</p> <br>
+             <p><i class="fas fa-clock"></i><u>Ώρες Λειτουργίας:</u></p>
+             <p>Δευτέρα - Παρασκευή: 06:00 - 20:00</p>
+             <p>Σάββατο & Κυριακή: 07:00 - 16:00</p> <br>
+             <p><i class="fas fa-phone-alt"></i><u>Τηλέφωνο επικοινωνίας:</u></p>
+            <p>210 9356865</p>
+</div>
+<div id="contact-form">
+    <p><u>Φόρμα Επικοινωνίας</u></p>
+    <form id="form" method="POST" autocomplete="off">
+    <p id="form-error" class="error"></p>
+    <div class="form-element">
+        <label for="fullname">Ονοματεπώνυμο:</label>
+        <input id="fullname" name="fullname" type="text"/>
+        <p id="fullname-error" class="error"></p>
+    </div>
+    <div class="form-element">
+        <label for="email">E-mail:</label>
+        <input id="email" name="email" type="email"/>
+        <p id="email-error" class="error"></p>
+    </div>
+    <div class="form-element">
+        <label for="phone">Τηλέφωνο επικοινωνίας:</label>
+        <input id="phone" name="phone" type="tel"/>
+        <p id="phone-error" class="error"></p>
+    </div>
+    <div class="form-element">
+        <label for="message">Το μήνυμά σας:</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <p id="message-error" class="error"></p>
+    </div>
+    <button type="submit">Υποβολή μηνύματος</button>
+    </form>
+
+
+
+
+
+
+
+
+</div>
+
+</main>
+
+
+
+ <!-- Footer section -->
+ <footer>
+    <div id="footer-container" class="flex">
+        <div id="footer-legal" class="flex-col">
+            <h2>Χρήσιμοι Σύνδεσμοι</h2>
+            <a href="#">Όροι & Προϋποθέσεις</a>
+            <a href="#">Πολιτική Απορρήτου</a>
+        </div>
+        <nav id="sitemap" class="flex-col">
+            <h2>Sitemap</h2>
+           <ul>
+           <li><a href="index.html">Αρχική</a></li>
+           <li><a href="about.html">Η Ιστορία μας</a></li>
+           <li><a href="products.html">Τα Προϊόντα μας</a></li>
+           <li><a href="contact-us.html">Επικοινωνία</a></li>
+           </ul>
+        </nav>
+        <div id="footer-contact" class="flex-col">
+            <h2>Πληροφορίες</h2>
+            <p><u>Διεύθυνση:</u></p>
+            <p>Κωνσταντίνου Παλαιολόγου 36, Νέα Σμύρνη</p> <br>
+            <p><u>Ώρες Λειτουργίας:</u></p>
+            <p>Δευτέρα - Παρασκευή: 06:00 - 20:00</p>
+            <p>Σάββατο & Κυριακή: 07:00 - 16:00</p> <br>
+            <p><u>Τηλέφωνο επικοινωνίας:</u></p>
+           <p>210 9356865</p>
+        </div>
+        <div id="footer-socialmedia" class="flex-col">
+           <h2>Ακολουθήστε μας στα social media</h2>
+           <p><i class="fab fa-facebook"></i> Facebook: Ο Νίκος </p>
+           <p><i class="fab fa-instagram"></i> Instagram: @nikos1977 </p>
+        </div>
+    </div>
+    <div id="bottombar" class="flex">
+        <p>Handcrafted with love and anxiety.</p>
+    </div>
+</footer>
+</body>
+</html>

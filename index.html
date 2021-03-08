@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="images/NIKOS_Logo-1-300x298.png" type="image/png">
+    <script src="https://kit.fontawesome.com/8c629bec5a.js" crossorigin="anonymous"></script>
+    <script src="scripts/burger-menu.js" defer></script>
+    <script src="scripts/slider.js" defer></script>
+    <title>Αρχική Σελίδα | Ο Νίκος 1977</title>
+</head>
+<body>
+    <!-- HEADER SECTION -->
+<header>
+     <!--Topbar with info-->
+     <div id="topbar" class="flex">
+        <span id="address">
+            <p><i class="fas fa-map-marker-alt topbar-icon"></i> Κωνσταντίνου Παλαιολόγου 36, Νέα Σμύρνη</p>
+        </span>
+        <span id="sm-phone" class="hidden-mobile">
+             <p id="tel"><i class="fas fa-phone-alt topbar-icon"></i> 210 9356865</p>  
+        </span>
+    </div>
+    <!-- Navigation bar -->
+    <div id="menu" class="flex">
+         <div id="openMenu"><i class="fas fa-bars menu-icon"></i></div>
+         <a href="index.html"><img id="logo" src="images/nikos-logo-270x270.png" alt="Nikos Logo"/></a>
+         <div id="phone"><a href="tel:+302109356865"><i class="fas fa-phone menu-icon"></i></a></div>
+         <ul id="links" class="hidden-mobile">
+             <li><a href="index.html" class="menu-item active">Αρχική</a></li>
+             <li><a href="about.html" class="menu-item">Η Ιστορία μας</a></li>
+             <li><a href="products.html" class="menu-item">Τα Προϊόντα μας</a></li>
+             <li><a href="contact-us.html" class="menu-item">Επικοινωνία</a></li>
+             </ul>
+     </div> 
+     <div id="nav-mobile">
+         <div id="closeMenu"><i class="fas fa-times menu-icon"></i></div>
+         <ul>
+             <li><a href="index.html" class="menu-item-mobile">Αρχική</a></li>
+             <li><a href="about.html" class="menu-item-mobile">Η Ιστορία μας</a></li>
+             <li><a href="products.html" class="menu-item-mobile">Τα Προϊόντα μας</a></li>
+             <li><a href="contact-us.html" class="menu-item-mobile">Επικοινωνία</a></li>
+         </ul>
+     </div>        
+ </header>
+
+ <!-- Slider // Image Gallery -->
+<main>
+ <div id="slider">
+     <div class="slide" id="s0">
+         <img src="images/coffee-shop-1920-1080.jpg" alt="Shop">
+         <div id="info1" class="info-wrapper flex-col">
+             <h2 class="heading">Είμαστε μαζί σας 44 χρόνια...</h1>
+             <h3>Και συνεχίζουμε να σας εξυπηρετούμε καθημερινά!</h3>
+         </div>
+        </div>
+        <div class="slide" id="s1">
+            <img src="images/fresh-products-1920-1080.jpg"/>
+            <div id="info2" class="info-wrapper flex-col">
+                <h2 class="heading">Φρεσκοψημένα προϊόντα καθημερινά</h1>
+                    <h3>Για εσάς και τους αγαπημένους σας!</h3>
+            </div>
+        </div>
+        <div class="slide" id="s2">
+            <img src="images/espresso-coffee-1920-1080.jpg" alt="">
+            <div id="info3" class="info-wrapper flex-col">
+                <h2 class="heading">Προσφέρουμε κορυφαίο καφέ</h1>
+                    <h3>Που απογειώνει την κάθε στιγμή!</h3>
+            </div>
+     </div>
+     <div id="dots">
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+     </div>
+ </div>
+ <div id="content" class="flex">
+     <h2 class="heading">Εδώ και 44 χρόνια...</h2>
+    <p class="copy">Παράγουμε για εσάς & τους αγαπημένους σας φρέσκα προϊόντα με τις καλύτερες πρώτες ύλες!</p>
+ </div>
+ <section class="flex-col">
+ <h2 class="section-title">Δημοφιλή Προϊόντα</h2>
+ <div id="fav-products" class="flex">
+     <div class="product-card">
+             <img src="images/product1.jpg" alt="Tyropita">
+         <h2 class="product-title">Τυρόπιτα</h2>
+         <p class="product-copy">Η κλασσική τυρόπιτα που έχει μεγαλώσει γενιές Νεοσμυρνιωτών!</p>
+     </div>
+     <div class="product-card">
+         <img src="images/product2.jpg" alt="Pizza">
+         <h2 class="product-title">Pizza με bacon</h2>
+         <p class="product-copy">Το απόλυτο snack για μία απαιτητική μέρα!</p>
+        </div>
+        <div class="product-card">
+            <img src="images/product3.jpg" alt="Croissant">
+            <h2 class="product-title">Croissant πραλίνα</h2>
+            <p class="product-copy">Το γλυκό που επιλέγουν οι μεγάλοι αλλά και οι μικροί μας φίλοι!</p>
+        </div>
+        <div class="product-card">
+            <img src="images/product4.jpg" alt="Sticks">
+            <h2 class="product-title"><a href="product-page.html">Croissant sticks</a></h2>
+            <p class="product-copy">Το ιδανικό συνοδευτικό για τον απογευματνό καφέ!</p>
+     </div>
+    </div>
+    <button id="section-btn"><a href="product-page.html">Δείτε Περισσότερα</a></button> <!-- Product Page Demo -->
+</section>
+</main>
+ <!-- Footer section -->
+ <footer>
+     <div id="footer-container" class="flex">
+         <div id="footer-legal" class="flex-col">
+             <h2>Χρήσιμοι Σύνδεσμοι</h2>
+             <a href="#">Όροι & Προϋποθέσεις</a>
+             <a href="#">Πολιτική Απορρήτου</a>
+         </div>
+         <nav id="sitemap" class="flex-col">
+             <h2>Sitemap</h2>
+            <ul>
+            <li><a href="index.html">Αρχική</a></li>
+            <li><a href="about.html">Η Ιστορία μας</a></li>
+            <li><a href="products.html">Τα Προϊόντα μας</a></li>
+            <li><a href="contact-us.html">Επικοινωνία</a></li>
+            </ul>
+         </nav>
+         <div id="footer-contact" class="flex-col">
+             <h2>Πληροφορίες</h2>
+             <p><u>Διεύθυνση:</u></p>
+             <p>Κωνσταντίνου Παλαιολόγου 36, Νέα Σμύρνη</p> <br>
+             <p><u>Ώρες Λειτουργίας:</u></p>
+             <p>Δευτέρα - Παρασκευή: 06:00 - 20:00</p>
+             <p>Σάββατο & Κυριακή: 07:00 - 16:00</p> <br>
+             <p><u>Τηλέφωνο επικοινωνίας:</u></p>
+            <p>210 9356865</p>
+         </div>
+         <div id="footer-socialmedia" class="flex-col">
+            <h2>Ακολουθήστε μας στα social media</h2>
+            <p><i class="fab fa-facebook"></i> Facebook: Ο Νίκος </p>
+            <p><i class="fab fa-instagram"></i> Instagram: @nikos1977 </p>
+         </div>
+     </div>
+     <div id="bottombar" class="flex">
+         <p>Handcrafted with love and anxiety.</p>
+     </div>
+ </footer>
+</body>
+</html>
